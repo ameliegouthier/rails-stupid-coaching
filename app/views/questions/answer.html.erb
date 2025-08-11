@@ -1,0 +1,16 @@
+<div class="container vh-100 d-flex flex-column justify-content-center" style="max-width: 600px;">
+  <h1 class="mb-4">Ton coach te réponds 🎽</h1>
+
+  <p class="mb-3">
+    <strong>Your question:</strong>
+  </p>
+  <div class="bg-light p-3 rounded mb-4">
+    <%= @questions %>
+  </div>
+
+  <div class="p-3 rounded border mb-4 alert alert-warning">
+    <%= @answer %>
+  </div>
+
+  <%= link_to "Ask a new question", ask_path, class: "btn btn-primary" %>
+</div>
